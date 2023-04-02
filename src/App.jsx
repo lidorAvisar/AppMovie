@@ -1,16 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import Navbar from './components/Navbar'
+import React from 'react'
+import Approuters from './routes/Approuters'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="App">
-    <Navbar/>
+    <div>
+      <Approuters/>
     </div>
   )
 }
-
-export default App
