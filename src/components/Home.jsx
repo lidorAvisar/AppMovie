@@ -1,7 +1,10 @@
 import React from 'react'
+import Carusel from './Carusel'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Carusel/>
+    </div>
   )
 }
