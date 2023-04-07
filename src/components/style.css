@@ -50,9 +50,10 @@ body{
     font-size: 40px;
   }
 
+
   @media screen and (min-width: 400px) {
     .carusel-img {
-      height: 180px;
+      height: 230px;
     }
   }
   
@@ -84,4 +85,8 @@ body{
     .carusel-img {
       height: 800px;
     }
+  }
+
+  .hoverImage:hover{
+  transform: scale(1.2);
   }

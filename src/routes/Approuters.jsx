@@ -13,9 +13,8 @@ export default function Approuters() {
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>
-            {/* <Route path='/' element={}/>
-            <Route path='/' element={}/>
-            <Route path='/' element={}/> */}
+            <Route path='/search/:searchData' element={<Home/>}/>
+            <Route path='/search/:searchData/year/:searchYears' element={<Home/>}/>
           </Route>
           <Route path='*' element={<Error/>}/>
         </Routes>
