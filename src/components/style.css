@@ -6,13 +6,12 @@ body{
 .image-error {
     background-color: rgba(0, 0, 0, 0.303);
     background-image: url("https://images4.alphacoders.com/111/1112635.png");
-    background-position: center;
+    background-position: 52%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     background-blend-mode: multiply;
-    height: 929px;
     width: auto;
   }
 
