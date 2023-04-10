@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
 import ScaleLoader from "react-spinners/ScaleLoader";
@@ -6,12 +6,15 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 
 export default function Carusel() {
   const [loading, setLoading] = useState(true);
-  const image = () => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
 
+  const image = () => {
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000);
   }
+  useEffect(()=>{
+    image()
+  },[])
 
   return (
     <div>
@@ -23,19 +26,19 @@ export default function Carusel() {
 
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carusel-img carousel-inner">
-            <div className="carousel-item active"  data-bs-interval="5100" >
+            <div className="carousel-item active"  data-bs-interval="4500" >
               <Link to={`/moviedeatels/tt6806448`}><img style={{ width: '100%', height: '100%' }} src="https://images.alphacoders.com/130/1300729.jpg" className="d-block" alt="..." /></Link>
             </div>
-            <div className="carousel-item" data-bs-interval="11100">
+            <div className="carousel-item" data-bs-interval="4500">
               <Link to={`/moviedeatels/tt0848228`}><img style={{ width: '100%', height: '100%' }} src="https://images8.alphacoders.com/100/1003220.png" className="d-block" alt="..." /></Link>
             </div>
-            <div className="carousel-item" data-bs-interval="11100">
+            <div className="carousel-item" data-bs-interval="4500">
               <Link to={`/moviedeatels/tt0848228`}><img style={{ width: '100%', height: '100%' }} src="https://images5.alphacoders.com/336/336484.jpg" className="d-block" alt="..." /></Link>
             </div>
-            <div className="carousel-item" data-bs-interval="11100">
+            <div className="carousel-item" data-bs-interval="4500">
               <Link to={`/moviedeatels/tt10872600`}><img style={{ width: '100%', height: '100%' }} src="https://images8.alphacoders.com/121/1218962.jpg" className="d-block" alt="..." /></Link>
             </div>
-            <div className="carousel-item" data-bs-interval="11100">
+            <div className="carousel-item" data-bs-interval="4500">
               <Link to={`/moviedeatels/tt22868844`}><img style={{ width: '100%', height: '100%' }} src="https://images2.alphacoders.com/121/1219607.jpg" className="d-block" alt="..." /></Link>
             </div>
           </div>
@@ -52,7 +55,7 @@ export default function Carusel() {
 
         </div>
       }
-      {image()}
+      
 
     </div>
   )
