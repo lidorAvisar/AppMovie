@@ -50,65 +50,85 @@ body{
   }
 
 
-  @media screen and (min-width: 400px) {
+   @media screen and (min-width: 400px) {
     .carusel-img {
-      height: 230px;
+      height: 30%;
+    }
+  }
+  @media screen and (min-width: 550px) {
+    .carusel-img {
+      height: 37%;
     }
   }
   
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 650px) {
     .carusel-img {
-      height: 280px;
+      height: 43vh;
     }
   }
   
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 750px) {
     .carusel-img {
-      height: 320px;
+      height: 52vh;
     }
-  }
+  } 
   
-  @media screen and (min-width: 1000px) {
+   @media screen and (min-width: 1000px) {
     .carusel-img {
-      height: 360px;
+      height: 64vh;
     }
   }
   
   @media screen and (min-width: 1200px) {
     .carusel-img {
-      height: 400px;
+      height: 76vh;
     }
   }
   
   @media screen and (min-width: 1400px) {
     .carusel-img {
-      height: 800px;
+      height: 875px;
     }
-  }
+  } 
 
   .hoverImage:hover{
   transform: scale(1.2);
   }
 
+  @media screen and (min-width: 320px) {
+    .vvvh{
+        height: 215vh;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    .vvvh{
+        height: 170vh;
+    }
+  }
 
+  @media screen and (min-width: 400px) {
+    .vvvh{
+        height: 165vh;
+    }
+  }
   @media screen and (min-width: 450px) {
     .vvvh{
-        height: 155vh;
+        height: 160vh;
     }
   }
   @media screen and (min-width: 526px) {
     .vvvh{
-        height: 145vh;
+        height: 155vh;
     }
   }
   @media screen and (min-width: 546px) {
     .vvvh{
-        height: 142vh;
+        height: 155vh;
     }
   }
   @media screen and (min-width: 992px) {
     .vvvh{
-        height: 95vh;
+        height: 93vh;
     }
   }
 

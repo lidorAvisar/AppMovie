@@ -25,7 +25,7 @@ export default function Navbar() {
                 navigate(`/search/${inputData.current.value}`)
               }
             }} style={{
-              borderRadius: '0px 25px 25px 0px', width: '200px', height: '40px',
+              borderRadius: '0px 25px 25px 0px', width: '250px', height: '40px',
                border: 'solid 1px rgb(0,0,0)', fontSize: '19px',
               paddingLeft: '6px', paddingBottom: '5px', marginBottom: '1px'
             }}

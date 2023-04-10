@@ -23,7 +23,7 @@ export default function Carusel() {
 
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carusel-img carousel-inner">
-            <div className="carousel-item active" data-bs-interval="5100" >
+            <div className="carousel-item active"  data-bs-interval="5100" >
               <Link to={`/moviedeatels/tt6806448`}><img style={{ width: '100%', height: '100%' }} src="https://images.alphacoders.com/130/1300729.jpg" className="d-block" alt="..." /></Link>
             </div>
             <div className="carousel-item" data-bs-interval="11100">

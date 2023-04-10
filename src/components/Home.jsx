@@ -62,10 +62,10 @@ export default function Home() {
       </div>
 
       {empty && <div style={{ height: '400px' }}> <h1 className='text-white text-center pt-5'>no results. . .</h1></div>}
-      <div className='d-flex flex-wrap justify-content-center mt-1' style={{ marginLeft: '100px', marginRight: '100px' }}>
+      <div className='d-flex flex-wrap justify-content-center mt-1' style={{ marginLeft: '90px', marginRight: '90px' }}>
         {data ? data.map((value, i) => {
           return (
-            <div key={i} className=' mx-1 mb-5'>
+            <div key={i} className=' mx-3 mb-5'>
               <Link to={`/moviedeatels/${value.imdbID}`}><img className='hoverImage' style={{ borderRadius: '10px', height: '400px', width: '280px', transition: '.2s' }} src={value.Poster} onError={(e) => e.target.style.display = 'none'} /></Link>
             </div>
           )
