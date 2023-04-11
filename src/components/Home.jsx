@@ -60,6 +60,7 @@ export default function Home() {
         </div>
         <div className='my-3 col-7 col-md-5'><SearchInput /></div>
       </div>
+      <hr  className='mx-5' style={{color:'white'}}/> 
 
       {empty && <div style={{ height: '400px' }}> <h1 className='text-white text-center pt-5'>no results. . .</h1></div>}
       <div className='d-flex flex-wrap justify-content-center mt-1' style={{ marginLeft: '90px', marginRight: '90px' }}>
