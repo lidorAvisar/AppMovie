@@ -87,7 +87,12 @@ body{
   
   @media screen and (min-width: 1400px) {
     .carusel-img {
-      height: 875px;
+      height: 85vh;
+    }
+  } 
+  @media screen and (min-width: 1500px) {
+    .carusel-img {
+      height: 94vh;
     }
   } 
 
@@ -132,6 +137,7 @@ body{
     }
   }
 
+
   .years_list{
     background-image: linear-gradient(
       to right,
@@ -173,4 +179,34 @@ body{
 .movie_info{
   max-width: 700px;
   margin: 0 auto;
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbar{
+    background: transparent;
+    height: 80px;
+    position: absolute;
+   
+  }
+  
+ 
+}
+
+
+@media screen and (min-width: 992px) {
+  .navbar{
+    background: transparent;
+    height: 85px;
+    position: fixed;
+    top: -18px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+  }
+  
+  .navbar.Active{
+    background-color: rgba(13, 17, 17, 0.863);
+    transition: 0.6s;
+  }
 }
