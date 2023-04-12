@@ -63,7 +63,7 @@ export default function Home() {
       <hr  className='mx-5' style={{color:'white'}}/> 
 
       {empty && <div style={{ height: '400px' }}> <h1 className='text-white text-center pt-5'>no results. . .</h1></div>}
-      <div className='d-flex flex-wrap justify-content-center mt-1' style={{ marginLeft: '90px', marginRight: '90px' }}>
+      <div className='d-flex flex-wrap justify-content-center mt-5' style={{ marginLeft: '90px', marginRight: '90px' }}>
         {data ? data.map((value, i) => {
           return (
             <div key={i} className=' mx-3 mb-5'>
