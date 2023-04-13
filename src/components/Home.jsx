@@ -58,7 +58,7 @@ export default function Home() {
           }} options={yearsList} className='text-center'>
           </Select>
         </div>
-        <div className='my-3 col-7 col-md-5'><SearchInput /></div>
+        <div className='my-3 col-7 col-md-6 m'><SearchInput /></div>
       </div>
       <hr  className='mx-5' style={{color:'white'}}/> 
 

@@ -15,17 +15,60 @@ body{
     width: auto;
   }
 
-  .appw {
-    font-family: fantasy;
-    font-size: 33px;
-    color: rgb(255, 0, 0);
-    transition: 0.8s;
-    animation-name: example;
-    animation-duration: 4.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-  
+
+  @media screen and (min-width: 320px) {
+    .appw {
+      font-family: fantasy;
+      font-size: 23px;
+      color: rgb(255, 0, 0);
+      transition: 0.8s;
+      animation-name: example;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    
+    }
   }
+  @media screen and (min-width: 400px) {
+    .appw {
+      font-family: fantasy;
+      font-size: 26px;
+      color: rgb(255, 0, 0);
+      transition: 0.8s;
+      animation-name: example;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    
+    }
+  }
+  @media screen and (min-width: 450px) {
+    .appw {
+      font-family: fantasy;
+      font-size: 30px;
+      color: rgb(255, 0, 0);
+      transition: 0.8s;
+      animation-name: example;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    
+    }
+  }
+  @media screen and (min-width: 550px) {
+    .appw {
+      font-family: fantasy;
+      font-size: 35px;
+      color: rgb(255, 0, 0);
+      transition: 0.8s;
+      animation-name: example;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    
+    }
+  }
+  
   
   @keyframes example {
   
@@ -40,15 +83,14 @@ body{
     40% {
       text-shadow: 5px 5px 20px  rgb(255, 0, 0);
     }
-  
-    /* 30% {text-shadow: 5px 5px 50px rgb(255, 255, 255);} */
-  
   }
   
-  .appw:hover {
-    font-size: 40px;
+  
+  @media screen and (min-width: 550px) {
+    .appw:hover {
+      font-size: 40px;
+    }
   }
-
 
    @media screen and (min-width: 400px) {
     .carusel-img {
