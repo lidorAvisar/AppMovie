@@ -33,7 +33,7 @@ export default function Carusel() {
               <Link to={`/moviedeatels/tt0848228`}><img style={{ width: '100%', height: '100%' }} src="https://images8.alphacoders.com/100/1003220.png" className="d-block" alt="..." /></Link>
             </div>
             <div className="carousel-item" data-bs-interval="4500">
-              <Link to={`/moviedeatels/tt0848228`}><img style={{ width: '100%', height: '100%' }} src="https://images5.alphacoders.com/336/336484.jpg" className="d-block" alt="..." /></Link>
+              <Link to={`/moviedeatels/tt0120338`}><img style={{ width: '100%', height: '100%' }} src="https://images5.alphacoders.com/336/336484.jpg" className="d-block" alt="..." /></Link>
             </div>
             <div className="carousel-item" data-bs-interval="4500">
               <Link to={`/moviedeatels/tt10872600`}><img style={{ width: '100%', height: '100%' }} src="https://images8.alphacoders.com/121/1218962.jpg" className="d-block" alt="..." /></Link>
