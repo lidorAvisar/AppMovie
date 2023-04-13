@@ -107,33 +107,33 @@ body{
   }
   @media screen and (min-width: 375px) {
     .vvvh{
-        height: 170vh;
+        height: 199vh;
     }
   }
 
   @media screen and (min-width: 400px) {
     .vvvh{
-        height: 165vh;
+        height: 193vh;
     }
   }
   @media screen and (min-width: 450px) {
     .vvvh{
-        height: 160vh;
+        height: 175vh;
     }
   }
   @media screen and (min-width: 526px) {
     .vvvh{
-        height: 155vh;
+        height: 175vh;
     }
   }
   @media screen and (min-width: 546px) {
     .vvvh{
-        height: 155vh;
+        height: 175vh;
     }
   }
   @media screen and (min-width: 992px) {
     .vvvh{
-        height: 93vh;
+        height: 100vh;
     }
   }
 

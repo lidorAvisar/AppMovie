@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className={navbar?'navbar Active':'navbar'}>
         <div className='d-flex align-items-center justify-content-between px-2 px-md-3 px-lg-4 px-xl-5 pt-md-2 py-lg-3 py-xl-4' style={{ width: '100%' }}  >
           <div className="col-lg-2 z-3">
-            <Link style={{ textDecoration: 'none' }} to={'/'}><span className='appw'>AppWatch</span></Link>
+            <Link style={{ textDecoration: 'none' }} to={'/'}><span className='appw'>AppMovie</span></Link>
           </div>
 
           <div className="input_search d-none  d-lg-flex align-items-center justify-content-center z-3 ">
