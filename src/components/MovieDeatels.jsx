@@ -36,15 +36,13 @@ export default function MovieDeatels() {
   return (
     <div>
       {loading ?
-        <div style={{ height: '900px' }} className='fs-1 d-flex justify-content-center align-items-center text-white text-center'>
-          <div>
-            <div style={{}}><BeatLoader color="#db0e0e" loading margin={5} speedMultiplier={1} /></div><div className='ms-5'>  loading. . .</div>
-          </div>
+        <div style={{ height: '900px' }} className='fs-1 d-flex justify-content-center align-items-center text-white '>
+            <div className='ms-5' style={{fontSize:'60px'}}>  loading</div><div style={{paddingTop:'25px',paddingLeft:'5px'}}><BeatLoader color="#db0e0e" loading margin={5} speedMultiplier={1} /></div>
         </div> :
 
         <div className='vvvh container d-lg-flex' style={{ justifyContent: 'center', alignItems: 'center' }}>
           {/* title */}
-          <div className='text-white d-lg-none text-center pt-5'><span style={{ fontSize: '60px', color: 'blue',fontFamily:'' }}>{data.Title}</span><br />
+          <div className='text-white d-lg-none text-center pt-5'><span style={{ fontSize: '60px', color: 'red', fontFamily: 'fantasy' }}>{data.Title}</span><br />
             <div className='py-3'><span className='fs-5 px-2' style={{ borderRight: '1px solid white' }}>{data.Runtime}</span><span style={{ borderRight: '1px solid white' }} className='px-2 fs-5'>{data.Language}</span><span style={{ borderRight: '1px solid white' }} className='px-2 fs-5'>{data.Year}</span></div>
           </div>
           {/* image */}
@@ -58,7 +56,7 @@ export default function MovieDeatels() {
           <div >
             <div style={{ marginLeft: '30px' }}>
               <div className='d-none d-lg-flex'>
-                <div className='ms-5 text-white'><span style={{ fontSize: '60px', color: 'white' }}>{data.Title}</span><br />
+                <div className='ms-5 text-white'><span style={{ fontSize: '60px', color: 'red', fontFamily: 'fantasy' }}>{data.Title}</span><br />
                   <div className='py-2'><span className='fs-5 px-2' style={{ borderRight: '1px solid white' }}>{data.Runtime}</span><span style={{ borderRight: '1px solid white' }} className='px-2 fs-5'>{data.Language}</span><span style={{ borderRight: '1px solid white' }} className='px-2 fs-5'>{data.Year}</span></div>
                 </div>
               </div>
