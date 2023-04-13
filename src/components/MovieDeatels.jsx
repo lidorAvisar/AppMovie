@@ -61,7 +61,7 @@ export default function MovieDeatels() {
                 </div>
               </div>
               <div className='text-white ms-3 ms-lg-5 mt-1 ps-2 ' style={{ height: '370px' }}>
-                <div style={{ width: '100%', fontFamily: 'cursive' }}><h5> <span style={{ fontSize: '25px', }}>{data.Plot}</span>  </h5></div>
+                <div style={{ width: '100%' }}><h5> <span style={{ fontSize: '25px', }}>{data.Plot}</span>  </h5></div>
                 <div className='py-2'> <h5> <span style={{ fontSize: '25px', textDecorationLine: 'underline' }}>Genre:</span>  {data.Genre}</h5></div>
                 <div className='py-2'> <h5> <span style={{ fontSize: '25px', textDecorationLine: 'underline' }}>Actors:</span>  {data.Actors}</h5></div>
                 <div className='py-2'> <h5> <span style={{ fontSize: '25px', textDecorationLine: 'underline' }}>Released:</span>  {data.Released}</h5></div>
