@@ -11,19 +11,19 @@ export default function MovieDeatels() {
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const params = useParams();
+  const {id} = useParams();
   const navigate = useNavigate();
 
 
   const getData = async () => {
-    const { data } = await axios.get(`https://omdbapi.com/?i=${params.id}&apikey=64dc74b3`);
+    const { data } = await axios.get(`https://omdbapi.com/?i=${id}&apikey=64dc74b3`);
     console.log(data);
     setData(data);
     setLoading(false);
   }
 
   useEffect(() => {
-    setTimeout(() => {
+    setTimeout(() => { 
       getData();
     }, 500);
   }, [])

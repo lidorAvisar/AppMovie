@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carusel from './Carusel'
-import axios, { all } from 'axios';
+import axios from 'axios';
 import { useLocation, useParams, Link, useNavigate } from 'react-router-dom';
 import SearchInput from './SearchInput';
 import './style.css'
@@ -12,15 +12,14 @@ export default function Home() {
   const [empty, setEmpty] = useState(false)
   const { searchData, searchYears } = useParams();
   const location = useLocation();
-  const yearsData = useRef();
   const [yearsList, setYearsList] = useState([])
   const navigate = useNavigate();
 
-  let getData = async function () {
+  let getData = async () => {
     let { data } = await axios.get(`https://www.omdbapi.com/?s=${searchData ? searchData : 'avengers'}${searchYears ? '&y=' + searchYears : ''}&apikey=64dc74b3`);
     setData(data.Search);
     console.log(data.Search);
-    setEmpty(data.Search?.length ? false : true)
+    setEmpty(data.Search? false : true)
   }
 
   useEffect(() => {
@@ -45,12 +44,12 @@ export default function Home() {
       <div className='d-flex justify-content-between align-items-center mb-5 my-1 my-lg-4'>
         <div className='d-none d-lg-flex list-unstyled text-white px-5 ms-5 col-lg-8 col-xl-9'>
           <h5 className=''>Top years:</h5>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/1989`}>1989</Link></p>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/1995`}>1995</Link></p>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2000`}>2000</Link></p>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2020`}>2020</Link></p>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2021`}>2021</Link></p>
-          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2023`}>2023</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/1989`}>1989</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/1995`}>1995</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2000`}>2000</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2020`}>2020</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2021`}>2021</Link></p>
+          <p className='years_list px-3'><Link to={`/search/${searchData || "avengers"}/year/2023`}>2023</Link></p>
         </div>
         <div className='container fs-6 col-5 col-lg-3 col-xl-2'>
           <Select onChange={item => {
@@ -60,7 +59,7 @@ export default function Home() {
         </div>
         <div className='my-3 col-7 col-md-6 m'><SearchInput /></div>
       </div>
-      <hr  className='mx-5' style={{color:'white'}}/> 
+      <hr className='mx-5' style={{ color: 'white' }} />
 
       {empty && <div style={{ height: '400px' }}> <h1 className='text-white text-center pt-5'>no results. . .</h1></div>}
       <div className='d-flex flex-wrap justify-content-center mt-5' style={{ marginLeft: '90px', marginRight: '90px' }}>
